@@ -11,6 +11,6 @@
   "license": "LicenseRef-LICENSE",
   "dependencies": {
     "lodash": "^3.10.1",
-    "mandrill": "^0.1.0"
+    "node-mandrill": "^1.0.1"
   }
 }
