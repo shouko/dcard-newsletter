@@ -3,10 +3,10 @@ module.exports = [{
 	likes: '',
 	content: '',
 	comments: [{
-		gender: 'male',
+		gender: 'boy',
 		content: ''
 	}, {
-		gender: 'female',
+		gender: 'girl',
 		content: ''
 	}],
 	url: ''
@@ -15,10 +15,10 @@ module.exports = [{
 	likes: '',
 	content: '',
 	comments: [{
-		gender: 'male',
+		gender: 'boy',
 		content: ''
 	}, {
-		gender: 'female',
+		gender: 'girl',
 		content: ''
 	}],
 	url: ''
