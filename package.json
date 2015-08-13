@@ -10,6 +10,7 @@
   "author": "Shouko",
   "license": "LicenseRef-LICENSE",
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "mandrill": "^0.1.0"
   }
 }
