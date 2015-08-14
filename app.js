@@ -20,7 +20,7 @@ mail_head += '<h2 style="color:#006AA6">狄卡精選</h2><h3>成為大學生的�
 var mail_body = '';
 var mail_foot = '<tr><td><center>\
 	<h3>你的未來同學，都在這裏</h3>\
-	<a target="_blank" href="https://wwww.dcard.tw/"><img alt="加入 Dcard" src="https://shouko.github.io/dcard-newsletter/img/button.png"></a>\
+	<a target="_blank" href="https://www.dcard.tw/new_apply"><img width="177" height="43" style="width:177px;height:43px" alt="加入 Dcard" src="https://shouko.github.io/dcard-newsletter/img/button.png"></a>\
 	<h3>下載 Dcard APP</h3>\
 	<a target="_blank" href="https://play.google.com/store/apps/details?id=com.sparkslab.dcardreader&amp;hl=zh_TW">\
 		<img alt="google play" style="width:144px;height:50px" width="144" height="50" src="https://shouko.github.io/dcard-newsletter/img/google_play.png"></a>\
@@ -46,7 +46,7 @@ posts.forEach(function(post) {
 		<tr bgcolor="white"><td colspan="12" style="padding-left:5vw;color:#797979;text-decoration:none">' + post.content + '<br><br></td></tr>';
 	post.comments.forEach(function(comment){
 		mail_body += '<tr bgcolor="white"><td colspan="1" style="padding-top:0px;padding-left:2vw"><center><img src="https://shouko.github.io/dcard-newsletter/img/';
-		mail_body += comment.gender + '.png" style="height: 45px"></center></td><td colspan="11" style="padding-left: 20px;padding-top:0px;background:url(https://shouko.github.io/dcard-newsletter/img/bubble.png) no-repeat;" style="color:#595959;text-decoration:none">';
+		mail_body += comment.gender + '.png" style="height: 30px"></center></td><td colspan="11" style="padding-left: 20px;padding-top:0px;background:url(https://shouko.github.io/dcard-newsletter/img/bubble.png) no-repeat;" style="color:#595959;text-decoration:none">';
 		mail_body += comment.content;
 		mail_body += '</td></tr>' + '<tr bgcolor="white"><td colspan="12"></td></tr>'
 	});
