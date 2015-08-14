@@ -20,13 +20,14 @@ mail_head += '<h2 style="color:#006AA6">狄卡精選</h2><h3>成為大學生的�
 var mail_body = '';
 var mail_foot = '<tr><td><center>\
 	<h3>你的未來同學，都在這裏</h3>\
+	<a target="_blank" href="https://wwww.dcard.tw/"><img alt="加入 Dcard" src="https://shouko.github.io/dcard-newsletter/img/button.png"></a>\
 	<h3>下載 Dcard APP</h3>\
 	<a target="_blank" href="https://play.google.com/store/apps/details?id=com.sparkslab.dcardreader&amp;hl=zh_TW">\
 		<img alt="google play" style="width:144px;height:50px" width="144" height="50" src="https://shouko.github.io/dcard-newsletter/img/google_play.png"></a>\
 	<a target="_blank" href="https://itunes.apple.com/us/app/dcard/id951353454?mt=8">\
 		<img alt="appstore" style="width:144px;height:50px" width="144" height="50" src="https://shouko.github.io/dcard-newsletter/img/app_store.png"></a>\
 	<br><br>\
-	<span style="color:#797979;font-size:0.5em">不想再收到 Dcard 電子報? <a style="color:#595959" href="">取消訂閱</a></span>\
+	<span style="color:#797979;font-size:0.5em">不想再收到 Dcard 電子報? <a style="color:#595959" href="https://docs.google.com/forms/d/1q69ZDhQkIZwIi-pIRSrRK8eNx_NDuPOBDMvPpcDPv_M/viewform">取消訂閱</a></span>\
 </center></td></tr>\
 </tbody></table>';
 var to = [];
@@ -41,11 +42,11 @@ posts.forEach(function(post) {
 	mail_body += '<tr><td>\
 	<a href="' + post.url + '"><table border="0" cellspacing="0" cellpadding="10" style="width: 90%;margin: 0 auto;table-layout: fixed;max-width: 800px"><tbody style="box-shadow: 3px black">\
 		<tr bgcolor="#82CFF6"><td colspan="12" style="-moz-border-radius-topleft:10px;-webkit-border-top-left-radius:10px;border-top-left-radius:10px;-moz-border-radius-topright:10px;-webkit-border-top-right-radius:10px;border-top-right-radius:10px">&nbsp;</td></tr>\
-		<tr bgcolor="white"><td colspan="9" style="padding-left:2vw"><h2 style="color:black">' + post.title + '</h2></td><td colspan="3" style="color:#F57A7A"><center><img src="https://shouko.github.io/dcard-newsletter/img/heart.png">' + post.likes + '</center></td></tr>\
-		<tr bgcolor="white" style="color:#797979;"><td colspan="12" style="padding-left:5vw">' + post.content + '<br><br></td></tr>';
+		<tr bgcolor="white"><td colspan="9" style="padding-left:5vw"><h2 style="color:black;text-decoration:none">' + post.title + '</h2></td><td colspan="3" style="color:#F57A7A;text-decoration:none"><center><img src="https://shouko.github.io/dcard-newsletter/img/heart.png">' + post.likes + '</center></td></tr>\
+		<tr bgcolor="white"><td colspan="12" style="padding-left:5vw;color:#797979;text-decoration:none">' + post.content + '<br><br></td></tr>';
 	post.comments.forEach(function(comment){
-		mail_body += '<tr bgcolor="white" style="color:#595959"><td colspan="1" style="padding-top:0px;padding-left:2vw"><center><img src="https://shouko.github.io/dcard-newsletter/img/';
-		mail_body += comment.gender + '.png" style="height: 45px"></center></td><td colspan="11" style="padding-left: 20px;padding-top:0px;background:url(https://shouko.github.io/dcard-newsletter/img/bubble.png) no-repeat;">';
+		mail_body += '<tr bgcolor="white"><td colspan="1" style="padding-top:0px;padding-left:2vw"><center><img src="https://shouko.github.io/dcard-newsletter/img/';
+		mail_body += comment.gender + '.png" style="height: 45px"></center></td><td colspan="11" style="padding-left: 20px;padding-top:0px;background:url(https://shouko.github.io/dcard-newsletter/img/bubble.png) no-repeat;" style="color:#595959;text-decoration:none">';
 		mail_body += comment.content;
 		mail_body += '</td></tr>' + '<tr bgcolor="white"><td colspan="12"></td></tr>'
 	});
